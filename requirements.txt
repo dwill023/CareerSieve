@@ -1,4 +1,4 @@
-streamlit=1.41.1
-python-jobspy=1.1.76
-pandas=2.2.3
-pybase64=1.4.0
+streamlit
+python-jobspy==1.1.76
+pandas==2.2.3
+pybase64==1.4.0
