@@ -6,7 +6,6 @@ import streamlit as st
 from jobspy import scrape_jobs
 import pandas as pd
 import base64
-from PIL import Image, ImageEnhance
 
 
 # Streamlit Page Configuration
@@ -120,7 +119,7 @@ def main():
     if st.sidebar.button("Generate Jobs"):
         with st.spinner('Generating Jobs Table...'):
             df = custom_function(selected_sources, role, loc, dist, numeric_input, is_remote)
-            st.success('Done!')
+            st.success('Done!', icon="✅")
             st.write("### Jobs Table")
             st.dataframe(df, hide_index=True)
 
